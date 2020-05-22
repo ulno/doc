@@ -1,9 +1,11 @@
-* Privacy Aware Voice Assistant, now for real: integrating Mycroft, Rhasspy, and Node-Red - Part 1 (Mycroft) *
+# Privacy Aware Voice Assistant, now for real: integrating Mycroft, Rhasspy, and Node-Red - Part 1 (Mycroft)
 
-Video on youtube: https://youtu.be/-fYOf4WBvzk
-Video on lbry:
-Video 
+**Resources:**
+- Video on youtube: https://youtu.be/-fYOf4WBvzk
+- Video on lbry:
+- This page: https://github.com/ulno/doc/blob/master/videos/2020-04-25%20Rhasspy%2C%20node-red%2C%20mycroft/part1/desc.md
 
+## Introduction
 As you see I am fascinated by voice assistants, but I don't like them sending things into the cloud. Do I really want Google, Amazon, Apple, and Microsoft listen and analyze every word I say in my private four walls? How about voice assistants in an industrial setting - is it OK there to send everything to an external cloud provider? Not sure that such solutions will be easy to sell. And what happens when the Internet is down?
 
 As excited as I initially was with Mycroft (https://mycroft.ai), I was a little disappointed to find out that they use (their own) third party cloud service to do speech to text. However, Mycroft is open source, so it allows me to exchange this service. After discovering Rhasspy (http://rhasspy.org, https://github.com/rhasspy/rhasspy-voltron, a system especially focusing on offline voice assistance).
@@ -13,10 +15,14 @@ Hey, I am a software engineer, I thought: "I can glue systems together that don'
 
 Follow along in this mini-series. The series has 3 parts:
 
+1. Installation Mycroft: https://youtu.be/-fYOf4WBvzk
+2. Installation Rhasspy: https://youtu.be/
+3. Integration with Node-RED: https://youtu.be/
 
-If you want to see the rest of the documentation with code examples, check this document here: TODO
+If you want to see the rest of the documentation with code examples, check this document here: https://github.com/ulno/doc/blob/master/videos/2020-04-25%20Rhasspy%2C%20node-red%2C%20mycroft/part1/desc.md
 
-====
+
+## Implementation
 
 We start here with a small introduction (so, if you are impatient jump directly to 2:12 to "
 Let's get started:).
@@ -118,9 +124,9 @@ do i need an umbrella today
 
 If everything works here, congratulations and leave a like (and an encouraging comment)! 
 If not, feel free to ask in the comments for help (and describe your problem).
-Now, you can move on to the next movie on setting up Rhasspy at https://youtu.be/ 
+Now, you can move on to the next movie on setting up Rhasspy at https://youtu.be/-fYOf4WBvzk
 
-====
+## End Matter
 
 Links to all projects:
 - Mycroft: https://mycroft.ai)
