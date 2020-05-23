@@ -1,6 +1,6 @@
 # Privacy Aware Voice Assistant, now for real: Mycroft, Rhasspy, and Node-RED - Part 2 (Rhasspy)
 
-![Thumbnail of video][thumb.png]
+![Thumbnail of video](thumb.png)
 
 **Resources:**
 - Video on YouTube: https://youtu.be/xKgPrn8ukcM
