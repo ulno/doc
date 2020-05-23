@@ -1,7 +1,8 @@
-# Privacy Aware Voice Assistant, now for real: integrating Mycroft, Rhasspy, and Node-Red - Part 1 (Mycroft)
+# Privacy Aware Voice Assistant, now for real: Mycroft, Rhasspy, and Node-RED - Part 1 (Mycroft)
 
 **Resources:**
-- Video on youtube: https://youtu.be/-fYOf4WBvzk
+- Thumbnail: 
+- Video on YouTube: https://youtu.be/-fYOf4WBvzk
 - Video on lbry:
 - This page: https://github.com/ulno/doc/blob/master/videos/2020-04-25%20Rhasspy%2C%20node-red%2C%20mycroft/part1/desc.md
 
@@ -13,19 +14,18 @@ I still like Mycroft and its community a lot, so what to do?
 
 Hey, I am a software engineer, I thought: "I can glue systems together that don't have explicit interfaces for each other". So, let's use Node-RED (https://nodered.org) as glue!
 
-Follow along in this mini-series. The series has 3 parts:
+Follow along in this mini-series. The series has 3 parts and we are starting here with the Mycroft installation:
 
 1. Installation Mycroft: https://youtu.be/-fYOf4WBvzk
-2. Installation Rhasspy: https://youtu.be/
-3. Integration with Node-RED: https://youtu.be/
+2. Installation Rhasspy: https://youtu.be/xKgPrn8ukcM
+3. Integration with Node-RED: https://youtu.be/hZwv80gB8f0
 
 If you want to see the rest of the documentation with code examples, check this document here: https://github.com/ulno/doc/blob/master/videos/2020-04-25%20Rhasspy%2C%20node-red%2C%20mycroft/part1/desc.md
 
 
 ## Implementation
 
-We start here with a small introduction (so, if you are impatient jump directly to 2:12 to "
-Let's get started:).
+We start here with a small introduction (so, if you are impatient jump directly to 2:12 to "Let's get started").
 
 I assume in this series that you have Node-RED installed and running in your network (check out https://nodered.org/docs/getting-started/ or demand an explanation video down in the comments).
 
@@ -124,7 +124,7 @@ do i need an umbrella today
 
 If everything works here, congratulations and leave a like (and an encouraging comment)! 
 If not, feel free to ask in the comments for help (and describe your problem).
-Now, you can move on to the next movie on setting up Rhasspy at https://youtu.be/-fYOf4WBvzk
+Now, you can move on to the next movie on setting up Rhasspy at https://youtu.be/... or the corresponding documentation here: https://github.com/ulno/doc/blob/master/videos/2020-04-25%20Rhasspy%2C%20node-red%2C%20mycroft/part1/desc.md
 
 ## End Matter
 
@@ -143,4 +143,4 @@ lbry://@ulno#2
  
 As usual, stay tuned and see you next time!
 
-#makers #IoT #IoTempire #diy #arduino #raspberrypi #opensource #nodered #Node-RED #rhasspy #mycroft #mycroft.ai
+#makers #IoT #IoTempire #diy #arduino #raspberrypi #opensource #nodered #Node-RED #rhasspy #mycroft #mycroft.ai #privacy #opensource

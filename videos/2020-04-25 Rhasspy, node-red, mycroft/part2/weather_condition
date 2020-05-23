@@ -1,0 +1,10 @@
+(clouds|cloudy):clouds
+(fog|foggy|mist|misty):fog
+(snow|snowy|snowing):snow
+(sun be shining):sun
+(rain|rainy|raining):rain
+(sun|sunny):sun
+(sun shining):sun
+(wind|windy|storming|stormy):wind
+(lightning|thunder|thunderstorm|thunderstorms):thunderstorm
+(sun shine):sun

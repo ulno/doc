@@ -1,5 +1,12 @@
-Privacy Aware Voice Assistant, now for real: integrating Mycroft, Rhasspy, and Node-Red - Part 3 (Node-RED Integration)
+# Privacy Aware Voice Assistant, now for real: Mycroft, Rhasspy, and Node-Red - Part 3 (Node-RED Integration)
 
+**Resources:**
+- Thumbnail: 
+- Video on Youtube: https://youtu.be/hZwv80gB8f0
+- Video on lbry:
+- This page: https://github.com/ulno/doc/blob/master/videos/2020-04-25%20Rhasspy%2C%20node-red%2C%20mycroft/part3/desc.md
+
+## Introduction
 As you see I am fascinated by voice assistants, but I don't like them sending things into the cloud. Do I really want Google, Amazon, Apple, and Microsoft listen and analyze every word I say in my private four walls? How about voice assistants in an industrial setting - is it OK there to send everything to an external cloud provider? Not sure that such solutions will be easy to sell. And what happens when the Internet is down?
 
 As excited as I initially was with Mycroft (https://mycroft.ai), I was a little disappointed to find out that they use (their own) third party cloud service to do speech to text. However, Mycroft is open source, so it allows me to exchange this service. After discovering Rhasspy (http://rhasspy.org, https://github.com/rhasspy/rhasspy-voltron, a system especially focusing on offline voice assistance).
@@ -7,17 +14,28 @@ I still like Mycroft and its community a lot, so what to do?
 
 Hey, I am a software engineer, I thought: "I can glue systems together that don't have explicit interfaces for each other". So, let's use Node-RED (https://nodered.org) as glue!
 
-Follow along in this mini-series
+Follow along in this mini-series. The series has 3 parts and in this third part, we will intgrate Mycroft and Rhasspy with Node-RED to achieve the actually privacy aware voice assistant:
 
-====
+1. Installation Mycroft: https://youtu.be/-fYOf4WBvzk
+2. Installation Rhasspy: https://youtu.be/xKgPrn8ukcM
+3. Integration with Node-RED: https://youtu.be/hZwv80gB8f0
 
-remember site-id in rhasspy
+If you want to see the rest of the documentation with code examples, check this document here: https://github.com/ulno/doc/blob/master/videos/2020-04-25%20Rhasspy%2C%20node-red%2C%20mycroft/part3/desc.md
 
-Websocket (in) rhasspy: ws://rhasspy-host:12101/api/events /intent (don't start with /) - name: rhasspy event
-Websocket (in/out) mycroft: ws://mycroft-host:8181/core - names: mycroft in, mycroft out
-Post request for text to speech: http://rhasspy-host:121-1/api/text-to-speech
 
-Thw whole flow I build in the movie is here (follow along or import it directly into node-red):
+## Implementation
+
+First, remember to configure the site-id in Rhasspy.
+
+Open your Node-RED (hope you have managed to install it, else revisit https://nodered.org/docs/getting-started/) at http://localhost:1880 (or replace with the computer in your network (instead of localhost) where you installed it.
+
+Create the following Websockets in Node-RED:
+- Websocket (in) rhasspy: ws://rhasspy-host:12101/api/events /intent (don't start with /) - name: rhasspy event
+- Websocket (in/out) mycroft: ws://mycroft-host:8181/core - names: mycroft in, mycroft out
+
+The post request for text to speech later is: http://rhasspy-host:121-1/api/text-to-speech
+
+The whole flow I built in the movie is here (follow along or import it directly into node-red):
 ```json
 [
     {
@@ -302,11 +320,14 @@ Thw whole flow I build in the movie is here (follow along or import it directly 
 ]
 ```
 
+Make sure, you use the right websockets and URLs and don't forget to deploy ;-)
 
-And don't forget to deploy ;-)
+Now you should have the full integration and can finally ask Mycroft for the weather or the time (as you can use all the other skills of Mycroft, but you will have to extend the Rhasspy grammar to support the phrases you want to ask).
 
+## End Matter
 
-======= end matter =====
+I hope you enjoyed this integration exercise and let me know if you manage to integrate other skills.
+
 Links to all projects:
 - Mycroft: https://mycroft.ai)
 - Rhasspy: http://rhasspy.org, https://github.com/rhasspy/rhasspy-voltron
@@ -322,4 +343,4 @@ lbry://@ulno#2
  
 As usual, stay tuned and see you next time!
 
-#makers #IoT #IoTempire #diy #arduino #raspberrypi #opensource #nodered #Node-RED #rhasspy #mycroft #mycroft.ai
+#makers #IoT #IoTempire #diy #arduino #raspberrypi #opensource #nodered #Node-RED #rhasspy #mycroft #mycroft.ai #privacy
