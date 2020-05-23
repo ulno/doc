@@ -15,7 +15,7 @@ I still like Mycroft and its community a lot, so what to do?
 
 Hey, I am a software engineer, I thought: "I can glue systems together that don't have explicit interfaces for each other". So, let's use Node-RED (https://nodered.org) as glue!
 
-Follow along in this mini-series. The series has 3 parts and in this third part, we will intgrate Mycroft and Rhasspy with Node-RED to achieve the actually privacy aware voice assistant:
+Follow along in this mini-series. The series has 3 parts and in this third part, we will integrate Mycroft and Rhasspy with Node-RED to achieve the actually privacy aware voice assistant:
 
 1. Installation Mycroft: https://youtu.be/-fYOf4WBvzk
 2. Installation Rhasspy: https://youtu.be/xKgPrn8ukcM
