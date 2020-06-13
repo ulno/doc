@@ -55,8 +55,9 @@ For any system, now continue the following way:
 ```
 git clone --recurse-submodules https://github.com/rhasspy/rhasspy-voltron
 cd rhasspy-voltron/
-./configure  # this is new no configure necessary before (and not used in movie)
+./configure  # this is new - no configure necessary before (and not used in movie)
 make
+make install # also this is newand wasn't necessary before (and not used in movie)
 scripts/install-opengrm.sh download/opengrm-1.3.4-amd64.tar.gz .venv/tools/kaldi
 
 # Not sure if really still necessary: copy all bin and lib from opengrm to .venv/lib and tools
