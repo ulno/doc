@@ -110,7 +110,7 @@ git clone https://github.com/ulno/skill-weather
  
 Move or link this to /opt/mycroft/skills/mycroft-weather.mycroftai (make sure to backup original skill).
 
-In weather skill add to settingsmeta.json add the api key, like this (use your own key - this one here is not valid anymore):
+In weather skill add to settings.json add the api key, like this (use your own key - this one here is not valid anymore):
 ```json
 {
 	"api_key": "6e4d31ec5155fe8be2d2ad38cc0c2f3b",
