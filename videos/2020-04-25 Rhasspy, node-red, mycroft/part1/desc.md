@@ -34,6 +34,11 @@ In this first part, I show you how to Mycroft for this integration (gluing) task
 
 You find the first manual at: https://github.com/MycroftAI/mycroft-core
 
+For arch or Manjaro make sure to install these dependencies:
+```
+sudo pacman -S git python3 python-setuptools python-venv pygobject libtool libffi libjpg openssl autoconf bison swig glib2.0 portaudio19 mpg123 flac curl fann jq
+```
+
 Your first commands will be:
 ```
 git clone https://github.com/MycroftAI/mycroft-core.git
