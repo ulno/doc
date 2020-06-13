@@ -40,6 +40,8 @@ sudo apt-get install \
     perl curl patchelf ca-certificates
 ```
 
+On raspberry pi (probably also debian buster) skip ibttspico-utils.
+
 For Arch/Manjaro-like distros, run:
 ```
 sudo pacman -S base-devel swig portaudio mosquitto sox espeak flite git \
@@ -47,12 +49,13 @@ sudo pacman -S base-devel swig portaudio mosquitto sox espeak flite git \
 wget "http://mirrors.kernel.org/ubuntu/pool/universe/a/atlas/libatlas3-base_3.10.3-8ubuntu7_amd64.deb"
 dpkg-deb -x libatlas3-base_3.10.3-8ubuntu7_amd64.deb libatlas
 ```
-Also in arch, copy content of libatlas/libs to .venv/lib
+Also in arch, copy later content of libatlas/libs to .venv/lib (after creating the venv).
 
 For any system, now continue the following way:
 ```
 git clone --recurse-submodules https://github.com/rhasspy/rhasspy-voltron
 cd rhasspy-voltron/
+./configure  # this is new no configure necessary before (and not used in movie)
 make
 scripts/install-opengrm.sh download/opengrm-1.3.4-amd64.tar.gz .venv/tools/kaldi
 
@@ -94,7 +97,9 @@ Here are my sample grammar and slots:
 
 Here is one of the issues I discussed in the movie: https://community.rhasspy.org/t/did-anyone-get-precise-working-as-a-wakeword-system-for-rhasspy-2-5/750/4
 
-Hope the installation runs a bit smoother for you than for me,
+Hope the installation runs a bit smoother for you than for me.
+
+Next part is here: https://github.com/ulno/doc/edit/master/videos/2020-04-25%20Rhasspy,%20node-red,%20mycroft/part3/desc.md
 
 
 ## End Matter
