@@ -92,8 +92,8 @@ Here are my sample grammar and slots:
 - [named days](named_days)
 - [named times](named_times)
 - [places](places)
-- [weather condition](weather condition)
-- [weather items](weather items)
+- [weather condition](weather_condition)
+- [weather items](weather_items)
 
 Here is one of the issues I discussed in the movie: https://community.rhasspy.org/t/did-anyone-get-precise-working-as-a-wakeword-system-for-rhasspy-2-5/750/4
 
