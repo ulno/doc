@@ -125,7 +125,7 @@ do i need an umbrella today
 
 If everything works here, congratulations and leave a like (and an encouraging comment)! 
 If not, feel free to ask in the comments for help (and describe your problem).
-Now, you can move on to the next movie on setting up Rhasspy at https://youtu.be/... or the corresponding documentation here: https://github.com/ulno/doc/blob/master/videos/2020-04-25%20Rhasspy%2C%20node-red%2C%20mycroft/part1/desc.md
+Now, you can move on to the next movie on setting up Rhasspy at https://youtu.be/... or the corresponding documentation here: https://github.com/ulno/doc/blob/master/videos/2020-04-25%20Rhasspy%2C%20node-red%2C%20mycroft/part2/desc.md
 
 ## End Matter
 
